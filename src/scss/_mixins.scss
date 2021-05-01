@@ -1,0 +1,28 @@
+@mixin phone() {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+@mixin tablet() {
+  @media (max-width: 990px) and (min-width: 576px) {
+    @content;
+  }
+}
+@mixin max-tablet() {
+  @media (max-width: 990px) {
+    @content;
+  }
+}
+
+//Default Placeholders
+%default-card-body {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+%default-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}

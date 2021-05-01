@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoverFlightCard renders the Non Stop Card 1`] = `
+<section class="layoverFlightCard">
+  <el-card shadow="always" class="card">
+    <div class="card__body">
+      <div class="flex-column"><svg class="icon icon-aircraft-take-off">
+          <use xlink:href="/sprite.svg#icon-aircraft-take-off"></use>
+        </svg></div>
+      <div class="flex-column"><span class="primary--text">Multiple</span><span class="showDetailsLink">Show Details</span></div>
+      <div class="flex-column"><span class="primary--text">8:15</span><span class="secondary--text">Pune (PNQ)</span></div>
+      <div class="flex-column"><span class="primary--text">9:15</span><span class="secondary--text">Bengaluru (BLR)</span></div>
+      <div class="flex-column"><span class="primary--text">1 Hr 0 min</span><span class="secondary--text">Total Duration</span></div>
+      <div class="flex-column"><span class="primary--text red-color">
+          ₹7098</span> <span class="secondary--text">1 Ticket</span></div>
+      <el-button type="success" round="">Book</el-button>
+    </div>
+    <!---->
+  </el-card>
+</section>
+`;

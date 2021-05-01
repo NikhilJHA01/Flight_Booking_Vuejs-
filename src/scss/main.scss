@@ -1,0 +1,65 @@
+@import "./base";
+@import "./mixins";
+@import "./variables";
+
+// Globally used classes
+.primary--text {
+  color: $primary-black;
+  font-size: 14px;
+  padding: 2px;
+}
+.secondary--text {
+  font-size: 12px;
+  color: $secondary-black;
+  padding: 2px;
+}
+
+.defaultBookButton {
+  border-radius: 20px;
+}
+
+.flex-column {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .red-color {
+    color: $red;
+  }
+}
+
+// Media Queries for devices such as tablets and mobiles
+@include tablet() {
+  .primary--text {
+    font-size: 12px;
+    padding: 2px;
+  }
+  .secondary--text {
+    font-size: 10px;
+    padding: 2px;
+  }
+}
+@include phone() {
+  .primary--text {
+    font-size: 11px;
+    padding: 2px;
+  }
+  .secondary--text {
+    font-size: 9px;
+    padding: 2px;
+  }
+  .defaultBookButton {
+    font-size: 10px;
+    padding: 12px 6px;
+    border-radius: 50%;
+  }
+  .card {
+    .icon-aircraft-take-off {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      stroke: $primary-main;
+      fill: white;
+    }
+  }
+}
